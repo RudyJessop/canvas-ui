@@ -14,6 +14,6 @@ Step 3 - `npm install`
 Step 4 - `npm run watch` or `npm run build`
 Step 5 - `electron .` or `npm run start`
 
-Learn more about [Electron](https://github.com/atom/electron) before digging in 
+Learn more about [Electron](https://github.com/atom/electron) before digging in
 
 #### License [Eclipse Public License](LICENSE.md)

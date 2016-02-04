@@ -3,7 +3,8 @@
 const electron = require('electron');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
-const nativeImage = require('electron').nativeImage;
+const nativeImage = electron.nativeImage;
+const remote = electron.remote;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -31,7 +32,6 @@ app.on('ready', function() {
   // mainWindow.webContents.openDevTools();
   BrowserWindow.addDevToolsExtension(__dirname + '/tools/react-devtools/shells/chrome');
 
-  // mainWindow.BrowserWindow.addDevToolsExtension('/Users/Mavericks/Documents/apps/tools/react-devtools');
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
@@ -47,5 +47,16 @@ app.on('ready', function() {
 var BaseImage = nativeImage.createEmpty();
 
 // Menu
+let Menu;
+
+template = [{
+  label: 'Canvas UI',
+  Submenu: [{
+    label: 'About Canvas UI'
+  }]
+}]
+
+
+
 
 // System Tray

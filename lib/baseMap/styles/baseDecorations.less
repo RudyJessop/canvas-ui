@@ -1,16 +1,40 @@
 // copyright 2016 Core Tech Labs, Inc
 
 //variables
-@body-color:    #000000;
-@baseFontColor: #ffffff;
+@body-color:                #353740;
+@left-body-color:           #696E7F;
+@partition:                 #D3DCFF;
+@baseFontColor:             #ffffff;
 
 body{
   background:@body-color;
   color: @baseFontColor;
+  overflow:hidden !important;
+}
+
+.container-fluid{
+  padding-right:0px !important;
+  padding-left: 0px !important;
+}
+
+.LeftSide{
+  background: @left-body-color;
+  min-height:550px;
+}
+
+.RightSide{
+  //
+}
+
+.Central{
+  border-left:1px solid @partition;
+  border-right:1px solid @partition;
+  min-height: 550px;
 }
 
 // Reseting Bootstrap
 .footer{
   padding-left: 0px !important;
   padding-right: 0px !important;
+  border-top:1px solid @partition;
 }
